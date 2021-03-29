@@ -21,7 +21,6 @@ const App: VFC = () => {
       try {
         const res = await axios.get<User[]>(url);
         setUsers(res.data);
-        console.log(res.data);
       } catch (error) {
         setIsError(true);
         setErrorMsg(error.message);
@@ -36,7 +35,7 @@ const App: VFC = () => {
         {users && (
           <ul>
             {users.map((user) => (
-              <li>　{user.name}</li>
+              <li key={user.id}>　{user.name}</li>
             ))}
           </ul>
         )}

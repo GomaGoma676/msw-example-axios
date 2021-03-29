@@ -1,7 +1,7 @@
 import { rest } from "msw";
 
 export const handlers = [
-  //Fetch succeed
+  //Fetch succeed:
   rest.get("https://jsonplaceholder.typicode.com/users", (req, res, ctx) => {
     return res(
       ctx.status(200),
@@ -12,7 +12,7 @@ export const handlers = [
       ])
     );
   }),
-  //Fetch failed
+  //Fetch failed:
   rest.get("https://jsonplaceholder.typicode.com/users", (req, res, ctx) => {
     return res(ctx.status(400));
   }),

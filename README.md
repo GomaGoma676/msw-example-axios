@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+See below link for MSW setup
+https://mswjs.io/docs/getting-started/integrate/browser#where-is-my-public-directory
 
 ## Available Scripts
 
